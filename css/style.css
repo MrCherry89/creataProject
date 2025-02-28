@@ -921,17 +921,17 @@ textarea.error {
 
 .section__full {
   width: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 97px);
   overflow: hidden;
 }
 @media (max-width: 1024px) {
   .section__full {
-    min-height: calc(100vh - 86px);
+    min-height: calc(100vh - 88px);
   }
 }
 @media (max-width: 767px) {
   .section__full {
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 72px);
   }
 }
 
@@ -4036,8 +4036,8 @@ textarea.error {
 }
 @media (max-width: 767px) {
   .project-banner {
-    min-height: 700px;
     background-position: 25% center;
+    margin-top: -73px;
   }
 }
 .project-banner .info {
@@ -4547,8 +4547,8 @@ textarea.error {
 }
 @media (max-width: 767px) {
   .mtc-banner {
-    height: 100vh;
-    margin-top: -70px;
+    min-height: 100vh;
+    margin-top: -73px;
     padding-top: 60px;
   }
 }
@@ -4788,7 +4788,7 @@ textarea.error {
 @media (max-width: 767px) {
   .stickermania-banner {
     min-height: 100vh;
-    margin-top: -70px;
+    margin-top: -73px;
     padding-top: 60px;
   }
 }
@@ -5037,7 +5037,7 @@ textarea.error {
 @media (max-width: 767px) {
   .monopoly-banner {
     min-height: 100vh;
-    margin-top: -70px;
+    margin-top: -73px;
     padding-top: 60px;
   }
 }
@@ -5336,7 +5336,7 @@ textarea.error {
 @media (max-width: 767px) {
   .prisopolia-banner {
     min-height: 100vh;
-    margin-top: -70px;
+    margin-top: -73px;
     padding-top: 60px;
   }
 }
@@ -5401,13 +5401,13 @@ textarea.error {
 }
 @media (max-width: 1024px) {
   .drawing-banner {
-    min-height: calc(100vh - 86px);
+    min-height: calc(100vh - 88px);
   }
 }
 @media (max-width: 767px) {
   .drawing-banner {
     min-height: 100vh;
-    margin-top: -70px;
+    margin-top: -73px;
     padding-top: 60px;
     background: #FF0401 url(../img/drawing-bg-mob.png);
     background-size: cover;
@@ -7661,13 +7661,13 @@ textarea.error {
 }
 @media (max-width: 1024px) {
   .leo-banner {
-    margin-top: -86px;
+    margin-top: -88px;
   }
 }
 @media (max-width: 767px) {
   .leo-banner {
     min-height: 100vh;
-    margin-top: -70px;
+    margin-top: -73px;
   }
 }
 .leo-banner .wrapper {
@@ -7881,7 +7881,7 @@ textarea.error {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-top: -100px;
+  margin-top: -97px;
   position: relative;
   z-index: 2;
 }
@@ -7904,7 +7904,7 @@ textarea.error {
 @media (max-width: 767px) {
   .smurfs-banner {
     min-height: 100vh;
-    margin-top: -70px;
+    margin-top: -73px;
   }
 }
 .smurfs-banner .info {
@@ -7997,7 +7997,7 @@ textarea.error {
 @media (max-width: 767px) {
   .critters-banner {
     min-height: 100vh;
-    margin-top: -70px;
+    margin-top: -73px;
   }
 }
 .critters-banner .info {
