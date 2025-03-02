@@ -11,6 +11,16 @@ $(document).ready(function () {
     errorPlacement: function (error, element) {},
   });
 
+    document.querySelector('.header-border-btn').addEventListener('click', function() {
+      const targetElement = document.getElementById('touch-form');
+      
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  
+
   $(".our-projects-slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -91,9 +101,9 @@ document.querySelectorAll(".mtc-banner .img, .stickermania-banner .img, .monopol
   });
 
 
-  $(".header .border-btn").smoothScroll({
-    speed: 1200,
-  });
+  // $(".header .border-btn").smoothScroll({
+  //   speed: 1200,
+  // });
 
   $(".objectives-slider").slick({
     slidesToShow: 4,
