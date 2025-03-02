@@ -4,24 +4,44 @@ if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-const dayElement = document.querySelector('[data-screen-one-picture]') || null;
 
-if (dayElement) {
-  const updateClipPath = (x, y) => {
-    dayElement.style.clipPath = `circle(100px at ${x}px ${y}px)`;
-  };
+function runOnLargeScreens() {
+  if (window.innerWidth > 1024) {
+    const dayElement = document.querySelector('[data-screen-one-picture]') || null;
 
-  document.addEventListener('mousemove', (evt) => {
-    updateClipPath(evt.clientX, evt.clientY);
-  });
+    if (dayElement) {
+      const updateClipPath = (x, y) => {
+        dayElement.style.clipPath = `circle(100px at ${x}px ${y}px)`;
+      };
+      const rect = dayElement.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
 
-  document.addEventListener('touchmove', (evt) => {
-    evt.preventDefault();
+      updateClipPath(centerX, centerY);
 
-    const touch = evt.touches[0];
-    updateClipPath(touch.clientX, touch.clientY);
-  }, { passive: false });
+      document.addEventListener('mousemove', (evt) => {
+        updateClipPath(evt.clientX, evt.clientY);
+      });
+
+      document.addEventListener('touchmove', (evt) => {
+        evt.preventDefault();
+
+        const touch = evt.touches[0];
+        updateClipPath(touch.clientX, touch.clientY);
+      }, { passive: false });
+
+      window.addEventListener('resize', () => {
+        const rect = dayElement.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        updateClipPath(centerX, centerY);
+      });
+    }
+  }
 }
+runOnLargeScreens();
+window.addEventListener('resize', runOnLargeScreens);
+
 
 
 class firstScreen {
