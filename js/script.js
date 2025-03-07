@@ -222,6 +222,7 @@ document.querySelectorAll(".mtc-banner .img, .stickermania-banner .img, .monopol
 
   $(".cases .tab-content .border-btn").click(function () {
     $(".cases .cases-items .main-info").removeClass("hide");
+    $(this).hide();
   });
 
   $(".tab-content").hide();

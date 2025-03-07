@@ -31,9 +31,9 @@ class sticker {
 
   initAnimation() {
     if (this.width > 768) {
-      this.tl1.set(this.stickerImg[0], { y: "-20%"})
-      this.tl1.set(this.stickerImg[1], { left: "-100px"})
-      this.tl1.set(this.stickerImg[3], { right: "-220px"})
+      this.tl1.set(this.stickerImg[0], { y: "-10%"})
+      this.tl1.set(this.stickerImg[1], { left: "-50px"})
+      this.tl1.set(this.stickerImg[3], { right: "-120px"})
       this.tl1.to(this.stickerImg[0], {
         y: "0%",
         duration: 4, // Продолжительность анимации

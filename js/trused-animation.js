@@ -34,7 +34,7 @@ class trused {
       this.tl1.set(this.trusedImg[0], { y: "-10%"})
       this.tl1.set(this.trusedImg[1], { y: "150%"})
       this.tl1.to(this.trusedImg[0], {
-        y: "30%",
+        y: "5%",
         duration: 4, // Продолжительность анимации
       }, "0");
       this.tl1.to(this.trusedImg[1], {

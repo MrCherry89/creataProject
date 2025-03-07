@@ -6727,7 +6727,8 @@ textarea.error {
   width: 320px;
   margin: auto;
   transition: 0.3s;
-  animation: moveUpDown 2s ease-in-out infinite alternate;
+  animation: cubeAnimation 4s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+
 }
 @media (max-width: 767px) {
   .results .results-info .info .cub img {
@@ -6735,6 +6736,21 @@ textarea.error {
     position: relative;
     left: 0px;
     animation: moveLeft 2s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes cubeAnimation {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-100px) rotate(180deg);
+  }
+  50% {
+    transform: translateY(0) rotate(360deg);
+  }
+  75% {
+    transform: translateY(100px) rotate(180deg);
   }
 }
 .results .results-info .info .img-wrap {
@@ -8488,7 +8504,7 @@ textarea.error {
 }
 .essence.essence-cr .text-wrap .cr-style {
   position: absolute;
-  bottom: 96%;
+  bottom: 95%;
   right: -55px;
   width: 91%;
   z-index: -1;
@@ -9307,7 +9323,7 @@ textarea.error {
   }
 }
 .merch-info .img-wrap{
-  height: 650px;
+  height: 550px;
   overflow: hidden; 
   border-radius: 20px;
   border: 2px solid #1C1C1C;
@@ -9335,7 +9351,7 @@ textarea.error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 650px;
+  height: 550px;
   border-radius: 20px;
   overflow: hidden;
   border: 2px solid #1C1C1C;
