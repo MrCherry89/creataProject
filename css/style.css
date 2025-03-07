@@ -6727,8 +6727,21 @@ textarea.error {
   width: 320px;
   margin: auto;
   transition: 0.3s;
-  animation: cubeAnimation 4s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: moveAndSkew 6s ease-in-out infinite;
 
+
+}
+
+@keyframes moveAndSkew {
+  0% {
+    transform: translateY(0) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-100px) rotateY(360deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0deg);
+  }
 }
 @media (max-width: 767px) {
   .results .results-info .info .cub img {
@@ -6739,20 +6752,7 @@ textarea.error {
   }
 }
 
-@keyframes cubeAnimation {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  25% {
-    transform: translateY(-100px) rotate(180deg);
-  }
-  50% {
-    transform: translateY(0) rotate(360deg);
-  }
-  75% {
-    transform: translateY(100px) rotate(180deg);
-  }
-}
+
 .results .results-info .info .img-wrap {
   border-radius: 20px;
   background: linear-gradient(180deg, #611394 37.5%, #1B171E 100%);
